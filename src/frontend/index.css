@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+li{
+    padding-top: 10px;
+color: blue;
+font-size:x-large;
+}
+header{
+    text-align: center;
+    color: blue;
+    padding: 40px 0;
+    background-color: burlywood;
+    font-weight: bold;
+}
+footer{
+    text-align: right;
+    color: blue;
+    padding: 40px 0;
+    background-color: burlywood;
+    text-align: center;
+}
+
+body{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+
+}
+form{
+padding:20px;
+}
+
+input{
+    width: 200px;
+}
+#reservationForm{
+    visibility:hidden;
+}
+.ReservationForm{
+    width:50%;
+    margin: 0 auto;
+    background-color:lightcoral;
+}
+
+.myimgsize{
+    width:270px;
+    height: 170px;;
+    float: right;
+    clear: both;
+    margin-right: 300px;
+}
+.mydetailedimgsize{
+    width:470px;
+    float: right;
+    clear: both;
+    position:absolute;
+    left: 800px;
+    top: 155px;
+}
+hr{
+    color:black;
+    
+}
+.jumbotron{
+    background-color:lightgrey;
+    padding-top: 10px;
+}
+#root{
+    background-color:lightgrey;
+   
+}

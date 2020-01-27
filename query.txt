@@ -1,0 +1,7 @@
+select max_reservations
+from meal 
+
+select meal_id, sum(number_of_guests) as totalGuests
+from reservation
+where meal_id = 71
+group by meal_id;
