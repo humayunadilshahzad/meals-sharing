@@ -66,6 +66,8 @@ function mealsId(req, router) {
           name
 
         }
+
+
         // // function checking only alphabets in string
         // function checkstring(str) {
         //   var alphbets = /^[a-zA-Z]+$/;
@@ -99,8 +101,14 @@ function mealsId(req, router) {
           },
           body: JSON.stringify(newReservation)
         })
-          .then(res => console.log(res));
+          .then(res => () => {
+            console.log(res);
+          });
         //        console.log(newReservation);
+        alert("Reservation Saved.....");
+        document.getElementById("name").value = "";
+        document.getElementById("phone").value = "";
+        document.getElementById("guestCount").value = "";
       });
 
 
