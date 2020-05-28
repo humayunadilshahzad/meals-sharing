@@ -58,10 +58,11 @@ input{
 }
 .mydetailedimgsize{
     width:470px;
+    height:270px;
     float: right;
     clear: both;
     position:absolute;
-    left: 800px;
+    left: 660px;
     top: 155px;
 }
 hr{

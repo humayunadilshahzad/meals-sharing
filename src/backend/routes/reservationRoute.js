@@ -23,6 +23,7 @@ router.get("/", (req, res) => {
 // adding new reservation
 router.post("/", (req, res) => {
     const  reservation  = req.body;
+    reservation.created_date = new Date();
     console.log(reservation);
     connection.query(`INSERT into reservation SET ?`, [reservation], (err, results, fields) => {
         if (err)

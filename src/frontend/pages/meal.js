@@ -16,7 +16,8 @@ function mealsId(req, router) {
       Location : ${data[0].location}  <br>
       Date & Time : ${data[0].when_date} <br>
       Max Guests : ${data[0].max_reservations} <br>
-      Cost : dkk ${data[0].price}`;
+      Cost : dkk ${data[0].price}<br><br>
+      <a href="/meals"><button class="btn-primary btn-lg "> Back to All Meals </button></a>`;
       document.getElementById("root").appendChild(newListElement);
 
       //injecting form for reservation
@@ -57,11 +58,11 @@ function mealsId(req, router) {
         const name = document.getElementById("name").value;
         const phone = document.getElementById("phone").value;
         const number_of_guests = document.getElementById("guestCount").value;
-        // const created_date = date();
+         //const created_date = new Date();
         const newReservation = {
           number_of_guests,
           meal_id,
-          //        created_date,
+          //created_date,
           phone,
           name
 
@@ -70,8 +71,8 @@ function mealsId(req, router) {
 
         // // function checking only alphabets in string
         // function checkstring(str) {
-        //   var alphbets = /^[a-zA-Z]+$/;
-        //   if (str.value.match(alphbets)) {
+        //   var alphbets = new RegExp(/^[a-zA-Z]{3,}$/);
+        //   if (str.test(alphbets)) {
         //     return true;
         //   }
         //   else {
