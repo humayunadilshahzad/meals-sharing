@@ -1,6 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const mysql = require("mysql");
+//const mysql = require("mysql");
 const dbPool=require("./database")
 const bodyParser = require("body-parser");
 const mealsRouter = require("./routes/mealsRoute");
@@ -13,9 +13,9 @@ const PORT = 5000;
 dotenv.config();
 
 
-const { MYSQL_URL } = process.env;
+//const { MYSQL_URL } = process.env;
 
-const connection = mysql.createPool(MYSQL_URL);
+//const connection = mysql.createPool(MYSQL_URL);
 
 app.use(bodyParser.json());
 app.use(express.static('public'));
