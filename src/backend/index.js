@@ -1,6 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const mysql = require("mysql");
+const dbPool=require("./database")
 const bodyParser = require("body-parser");
 const mealsRouter = require("./routes/mealsRoute");
 const reviewsRouter = require("./routes/reviewRoute");
@@ -40,11 +41,11 @@ app.use('/api/availabelreservations', availableReservationsRouter);
 
 app.listen(PORT, () => {
     console.log(`server is listening at port ${PORT}`);
-    // connection.createPool(err => {
-    //     if (err)
-    //         console.log(`Error connection : ${err}`);
-    //     else
-    //         console.log(`Conection Successful`);
-    // })
+    dbPool.getConnection(err => {
+        if (err)
+            console.log(`Error connection : ${err}`);
+        else
+            console.log(`Conection Successful`);
+    })
 
 });
