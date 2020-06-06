@@ -1,5 +1,5 @@
 const express = require("express");
-const dotenv = require("dotenv");
+// const dotenv = require("dotenv");
 //const mysql = require("mysql");
 const dbPool=require("./database")
 const bodyParser = require("body-parser");
@@ -10,7 +10,7 @@ const availableReservationsRouter = require("./routes/avalableReservationsRoute"
 
 const app = express();
 const PORT = 5000;
-dotenv.config();
+// dotenv.config();
 
 
 //const { MYSQL_URL } = process.env;
